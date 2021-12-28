@@ -1,0 +1,131 @@
+:root{
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Spartan', sans-serif;
+    color: var(--text-color);
+    background: var(--body-bg-color);
+    display: flex;
+}
+main{
+    width: 50%;
+}
+
+.container{
+    padding: 2.5rem 1.5rem;
+}
+
+.img-logo{
+    width: 60%;
+}
+
+.section-content{
+    margin-top: 3rem;
+}
+
+.title-h1{
+    font-family: 'Work Sans';
+    color: var(--title-color);
+    font-size: 1.5rem;
+}
+.section-title{
+    font-weight: 700;
+}
+
+.section-text{
+    padding-top: 0.5rem;
+    font-size: 0.875rem;
+}
+
+.form-rocketnews{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-label{
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+
+.input-area{
+    display: flex;
+    justify-content: flex-end;
+    height: 2.5rem;
+    margin-right: -7rem;
+    position: relative;
+}
+
+.form-input{
+    border: 0;
+    width: 95%;
+    border-left: 0.5rem solid var(--title-color);
+    padding: 0.5rem;
+}
+
+.form-input:focus{
+    outline: 0;
+    border: 2px solid var(--title-color);
+}
+
+.btn-submit{
+    border: 0;
+    background-color: var(--bg-button-color);
+    cursor: pointer;
+
+    transition: filter 0.2s;
+}
+
+.btn-submit:focus{
+    outline: 0;
+    border: 2px solid var(--title-color);
+}
+
+.btn-submit:hover{
+    filter: brightness(0.8);
+}
+
+.btn-submit-img{
+    height: 100%;
+}
+
+.link{
+    margin-top: 2rem;
+}
+
+.link-a{
+    text-decoration: none;
+    color: var(--bg-button-color);
+    height: 1.5rem; 
+    display: flex;
+    align-items: center;
+}
+
+.link-text{
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.img-background{
+    flex: 1;
+    background-image: url('../assets/read_news.jpg');
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+}
